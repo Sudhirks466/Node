@@ -6,7 +6,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
 
 ## 1. [Introduction to Node.js](#introduction-to-nodejs)
 
-   - What is Node.js?
+   - [What is Node.js?](#what-is-Nodejs?)
      - Overview and history of Node.js
      - Benefits of using Node.js
      - Use cases and industry applications
@@ -270,3 +270,6 @@ Node.js is well-suited for building:
 ### **Conclusion**
 
 Node.js is a powerful tool for building fast and scalable server-side applications. Its asynchronous, event-driven architecture makes it an excellent choice for applications that require handling many concurrent I/O operations, such as real-time chats, APIs, and streaming services. Its large ecosystem, performance, and JavaScript support make it a popular choice for developers. However, for CPU-intensive tasks, other technologies might be better suited.
+
+### **What is Node.js**
+**Node.js** is a JavaScript runtime built on **Chrome's V8 engine** that allows you to run JavaScript outside of the browser. It is primarily used for building fast, scalable server-side applications. Node.js uses an event-driven, non-blocking I/O model, making it lightweight and efficient, especially for data-intensive applications that need to handle many simultaneous connections.
