@@ -200,20 +200,10 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - Books, online courses, and tutorials
      - Community and support (forums, GitHub, Stack Overflow)
 
-# Title
-## Sub Title
-Brief description of project.
-
 ### Table of Content
-* [Section 1](#section1)
-* [Section 2](#section2)
-* [Section 3](#section3)
-
-# Section 1
-some text
-
-# Section 2
-some text
+* [Section 1](#section-1)
+* [Section 2](#section-2)
+* [Section 3](#section-3)
 
 # Section 3
 some text
