@@ -201,7 +201,9 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - Resources for Continued Learning
      - Books, online courses, and tutorials
      - Community and support (forums, GitHub, Stack Overflow)
-    
+---
+---
+---
 # **Introduction to Node.js**
 **Node.js** is a **JavaScript runtime** built on **Chrome's V8 JavaScript engine**. It allows developers to use JavaScript for writing server-side applications, which means you can build fast, scalable network applications using JavaScript on the server. Traditionally, JavaScript was primarily used for client-side scripting in web browsers. Node.js expanded the capabilities of JavaScript, making it possible to run JavaScript on the server side as well.
 
@@ -269,6 +271,10 @@ Node.js is well-suited for building:
 ### **Conclusion**
 
 Node.js is a powerful tool for building fast and scalable server-side applications. Its asynchronous, event-driven architecture makes it an excellent choice for applications that require handling many concurrent I/O operations, such as real-time chats, APIs, and streaming services. Its large ecosystem, performance, and JavaScript support make it a popular choice for developers. However, for CPU-intensive tasks, other technologies might be better suited.
+
+---
+---
+
 
 ### **What is Node.js**
 **Node.js** is a JavaScript runtime built on **Chrome's V8 engine** that allows you to run JavaScript outside of the browser. It is primarily used for building fast, scalable server-side applications. Node.js uses an event-driven, non-blocking I/O model, making it lightweight and efficient, especially for data-intensive applications that need to handle many simultaneous connections.
