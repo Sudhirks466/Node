@@ -269,25 +269,3 @@ Node.js is well-suited for building:
 ### **Conclusion**
 
 Node.js is a powerful tool for building fast and scalable server-side applications. Its asynchronous, event-driven architecture makes it an excellent choice for applications that require handling many concurrent I/O operations, such as real-time chats, APIs, and streaming services. Its large ecosystem, performance, and JavaScript support make it a popular choice for developers. However, for CPU-intensive tasks, other technologies might be better suited.
-
-# My Project
-
-## Table of Contents
-- [Introduction to Node.js](#introduction-to-nodejs)
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
-## Introduction to Node.js
-This is the sdfsfdds section.
-
-## Installation
-Steps to install the project.
-
-## Usage
-How to use the project.
-
-## License
-Details about the project's license.
-
