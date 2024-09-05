@@ -273,12 +273,12 @@ Node.js is a powerful tool for building fast and scalable server-side applicatio
 # My Project
 
 ## Table of Contents
-- [Introduction to Node.js](#introduction)
+- [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
-## Introduction to Node.js
+## Introduction
 This is the introduction section.
 
 ## Installation
