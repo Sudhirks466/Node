@@ -4,7 +4,7 @@ Node.js
 Creating a comprehensive course syllabus for Node.js and Express.js involves covering a wide range of topics that will equip learners with the knowledge and skills to build robust, scalable web applications. Below is a suggested syllabus that spans introductory to advanced topics:
 ### Node.js and Express.js Full Course Syllabus
 
-## 1. [Introduction to Node.js](#introduction)
+## 1. [Introduction to Node.js](#Introduction-to-Node.js)
    - What is Node.js?
      - Overview and history of Node.js
      - Benefits of using Node.js
