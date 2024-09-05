@@ -338,7 +338,7 @@ Node.js has revolutionized server-side development by bringing JavaScript to the
 
 
 
-<div id="introduction-to-nodejs" style="background-color: lightgrey; padding: 10px;"> 
+<p id="introduction-to-nodejs" style="background-color: lightgrey; padding: 10px;"> 
 Node.js has revolutionized server-side development by bringing JavaScript to the backend. Its event-driven, non-blocking model, combined with the vast ecosystem of modules through NPM, makes it ideal for building scalable and efficient applications. Over the years, Node.js has evolved from an experimental runtime into a key technology for modern web development, with continued growth and support from the global developer community.
 
-</div>
+</p>
