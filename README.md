@@ -6,7 +6,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
 
 ## 1. [Introduction to Node.js](#introduction-to-nodejs)
 
-   - [What is Node.js?](#what-is-Nodejs?)
+   - [What is Node.js?](#what-is-Nodejs)
      - Overview and history of Node.js
      - Benefits of using Node.js
      - Use cases and industry applications
