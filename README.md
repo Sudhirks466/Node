@@ -672,3 +672,144 @@ This setup should get you started with Node.js development quickly.
 
 ---
 # First Node.js Program
+Writing your first **Node.js** program is quite simple! Here's how you can create a basic program that demonstrates some of the core functionalities of Node.js, such as handling files, outputting data, or working with modules.
+
+### Steps to Create Your First Node.js Program:
+
+### 1. **Set up a Project Folder**
+- Create a new folder for your Node.js project. You can name it whatever you like.
+  ```bash
+  mkdir first-node-app
+  cd first-node-app
+  ```
+
+### 2. **Create a New File**
+- Create a new file called `app.js` inside the project folder.
+  ```bash
+  touch app.js
+  ```
+
+### 3. **Write Your First Node.js Program**
+Now, open the `app.js` file in your favorite code editor (e.g., VS Code, Sublime Text) and add the following code:
+
+```javascript
+// First Node.js Program
+console.log("Hello, World! Welcome to Node.js");
+```
+
+This is a simple "Hello, World!" program that prints a message to the console.
+
+### 4. **Run Your Node.js Program**
+- Open your terminal or command prompt, navigate to the folder where `app.js` is located, and run the file using the following command:
+
+```bash
+node app.js
+```
+
+You should see the following output:
+```bash
+Hello, World! Welcome to Node.js
+```
+
+Congratulations, you've written and executed your first Node.js program!
+
+---
+
+### 5. **Next Steps: Exploring Node.js Core Modules**
+
+To explore more Node.js functionalities, let’s enhance the program to interact with the file system. We'll use the built-in **`fs` (File System)** module to create and read files.
+
+#### Example 1: **Writing to a File**
+
+```javascript
+const fs = require('fs');
+
+// Write a message to a file
+fs.writeFileSync('message.txt', 'Hello, this is your first file created by Node.js!');
+
+console.log('File has been written successfully!');
+```
+
+#### Running the Program:
+Run the command again:
+```bash
+node app.js
+```
+
+Check your project folder; a new file called `message.txt` should be created with the following content:
+```
+Hello, this is your first file created by Node.js!
+```
+
+#### Example 2: **Reading from a File**
+
+```javascript
+const fs = require('fs');
+
+// Read the file contents
+const data = fs.readFileSync('message.txt', 'utf8');
+console.log('File Content:', data);
+```
+
+When you run the program, the content of the `message.txt` file will be read and printed to the console:
+```bash
+File Content: Hello, this is your first file created by Node.js!
+```
+
+---
+
+### 6. **Understanding the Code**
+
+- **`require('fs')`:** This statement imports the **`fs`** (File System) module, which is built into Node.js. It allows you to interact with the file system (reading, writing, etc.).
+- **`fs.writeFileSync()`**: This method synchronously writes data to a file. If the file does not exist, it will be created.
+- **`fs.readFileSync()`**: This method reads the content of a file synchronously.
+
+---
+
+### 7. **Building a Simple HTTP Server**
+
+Let’s create a simple HTTP server that listens on a specific port and responds with a "Hello, World!" message when accessed via a browser.
+
+Add the following code to your `app.js`:
+
+```javascript
+const http = require('http');
+
+// Create an HTTP server
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, World! This is your first Node.js server.\n');
+});
+
+// Define the port the server will listen on
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
+```
+
+#### Running the Server:
+Run the following command:
+```bash
+node app.js
+```
+
+You should see the following output:
+```bash
+Server running at http://localhost:3000/
+```
+
+Now, open your browser and go to `http://localhost:3000/`. You should see:
+```
+Hello, World! This is your first Node.js server.
+```
+
+### 8. **Summary of Key Concepts**
+- **Console Logging**: You used `console.log()` to print messages to the terminal.
+- **File Handling**: You used the `fs` module to read from and write to files.
+- **HTTP Server**: You created a simple HTTP server using the `http` module.
+
+This is a quick start to writing basic programs in Node.js. From here, you can explore more complex applications involving databases, APIs, and more!
+
+---
