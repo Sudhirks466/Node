@@ -11,7 +11,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Benefits of using Node.js](#Benefits-of-using-Nodejs)
      - [Use cases and industry applications](#Use-cases-and-industry-applications)
    - [Setup and Installation](#Setup-and-Installation)
-     - [Installing Node.js and NPM](#Installing-Nodejs-and-NPM)
+     - [Installing Node.js and NPM](#installing-nodejs-and-npm)
      - Using the Node REPL (Read-Eval-Print Loop)
    - First Node.js Program
      - Basic Hello World application
