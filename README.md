@@ -10,7 +10,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Overview and history of Node.js](#Overview-and-history-of-Nodejs)
      - [Benefits of using Node.js](#Benefits-of-using-Nodejs)
      - [Use cases and industry applications](#Use-cases-and-industry-applications)
-   - [Setup and Installation](#Setup-and-Installation-of-Nodejs)
+   - [Setup and Installation](#Setup-and-Installation)
      - Installing Node.js and NPM (Node Package Manager)
      - Using the Node REPL (Read-Eval-Print Loop)
    - First Node.js Program
@@ -518,6 +518,7 @@ Node.js is widely adopted across various industries due to its scalability, perf
 Node.js is versatile and finds applications in a broad spectrum of industries, especially those that need real-time data processing, high scalability, and fast performance.
 
 ---
+# **Setup and Installation**
 ### 1. **Setup and Installation of Node.js**
 
 To get started with **Node.js**, you first need to install it on your system. Here's how you can install Node.js on various operating systems:
