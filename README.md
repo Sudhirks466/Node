@@ -16,7 +16,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - [First Node.js Program](#first-nodejs-program)
      - [Basic Hello World application](#basic-hello-world-application)
      - [Understanding the `process` object](#understanding-the-process-object)
-     - Command-line arguments in Node.js
+     - [Command-line arguments in Node.js](#Command-line-arguments-in-Nodejs)
 
 ## 2. Understanding Node.js Core Concepts
    - Node.js Architecture
@@ -967,3 +967,110 @@ process.on('SIGINT', () => {
 
 ### Summary:
 The `process` object is essential for managing your Node.js application, providing access to command-line arguments, environment variables, memory usage, event handling, and more. It allows you to control the lifecycle and behavior of your application.
+
+---
+# **Command-line arguments in Node.js**
+In **Node.js**, command-line arguments are passed to your program via the `process.argv` array. This array contains all the arguments passed when the Node.js process was started.
+
+### Structure of `process.argv`:
+- **`process.argv[0]`**: This is the path to the Node.js executable.
+- **`process.argv[1]`**: This is the path to the JavaScript file being executed.
+- **`process.argv[2]` and beyond**: These are the actual command-line arguments passed by the user.
+
+### Example: Accessing Command-Line Arguments
+
+1. **Create a file `app.js`**:
+
+```javascript
+// Accessing command-line arguments
+console.log(process.argv);
+```
+
+2. **Run the application**:
+
+```bash
+node app.js arg1 arg2 arg3
+```
+
+3. **Output**:
+```bash
+[
+  '/usr/local/bin/node',  // process.argv[0] - path to the Node.js executable
+  '/path/to/your/app.js', // process.argv[1] - path to the script file
+  'arg1',                 // process.argv[2] - first argument
+  'arg2',                 // process.argv[3] - second argument
+  'arg3'                  // process.argv[4] - third argument
+]
+```
+
+### Example: Handling Command-Line Arguments
+
+You can extract and use the arguments passed to your program:
+
+```javascript
+// Extracting command-line arguments
+const args = process.argv.slice(2);  // Ignoring first two elements (node path and script path)
+
+console.log('Arguments:', args);
+
+// Example usage
+if (args.length < 2) {
+  console.log('Please provide at least two arguments.');
+} else {
+  console.log(`Hello ${args[0]} ${args[1]}!`);
+}
+```
+
+### Run the Program:
+
+```bash
+node app.js John Doe
+```
+
+### Output:
+
+```bash
+Arguments: [ 'John', 'Doe' ]
+Hello John Doe!
+```
+
+### Explanation:
+- **`process.argv.slice(2)`**: This removes the first two elements (Node.js executable and script path) and returns only the user-passed arguments.
+- You can use these arguments to modify the behavior of your script, pass data, or perform specific operations based on user input.
+
+---
+
+### Practical Example: Using Command-Line Arguments
+
+Let's create a script that takes a number as input and prints whether it is odd or even:
+
+```javascript
+const args = process.argv.slice(2);
+
+if (args.length !== 1 || isNaN(args[0])) {
+  console.log('Please provide a valid number.');
+} else {
+  const number = parseInt(args[0]);
+  if (number % 2 === 0) {
+    console.log(`${number} is even.`);
+  } else {
+    console.log(`${number} is odd.`);
+  }
+}
+```
+
+### Run the Program:
+
+```bash
+node app.js 42
+```
+
+### Output:
+
+```bash
+42 is even.
+```
+
+### Summary:
+- **`process.argv`** is an array that stores command-line arguments.
+- You can manipulate these arguments to control the behavior of your Node.js programs.
