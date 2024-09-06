@@ -312,8 +312,6 @@ Node.js comes with the **Node Package Manager (NPM)**, which is a huge ecosystem
 7. **Current State**:
    - Today, Node.js is one of the most popular technologies for server-side development, widely used by companies ranging from startups to large enterprises. It powers real-time web applications, microservices, RESTful APIs, and more. With an ever-growing community and ecosystem, Node.js continues to evolve, maintaining its role as a go-to platform for modern web development.
 
----
-
 ### **Node.js Milestones Timeline**
 
 - **2009**: Node.js was created by Ryan Dahl and first released.
