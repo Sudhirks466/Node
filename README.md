@@ -22,7 +22,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - [Node.js Architecture](#nodejs-architecture)
      - [Event-driven architecture](#2-event-driven-architecture)
      - The V8 JavaScript engine
-     - [Single-threaded and non-blocking I/O](##single-threaded-and-non-blocking-io)
+     - [Single-threaded and non-blocking I/O](#single-threaded-and-non-blocking-io)
    - Modules and Packages
      - What are modules?
      - Creating custom modules
