@@ -11,7 +11,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Benefits of using Node.js](#Benefits-of-using-Nodejs)
      - [Use cases and industry applications](#Use-cases-and-industry-applications)
    - [Setup and Installation](#Setup-and-Installation)
-     - [Installing Node.js and NPM (Node Package Manager)](#Installing-Nodejs-and-NPM-(Node-Package-Manager))
+     - [Installing Node.js and NPM (Node Package Manager)](#Installing-Nodejs-and-NPM)
      - Using the Node REPL (Read-Eval-Print Loop)
    - First Node.js Program
      - Basic Hello World application
@@ -572,7 +572,7 @@ These commands should output the installed versions of Node.js and npm, confirmi
 
 ---
 
-### 3. **Installing Node.js and NPM (Node Package Manager)**
+### 3. **Installing Node.js and NPM** **(Node Package Manager)**
 
 When you install Node.js, **npm** (Node Package Manager) is automatically installed along with it. Here's a brief overview of **npm** and how to use it:
 
