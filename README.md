@@ -13,7 +13,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - [Setup and Installation](#Setup-and-Installation)
      - [Installing Node.js and NPM](#3-installing-nodejs-and-npm)
      - [Using the Node REPL (Read-Eval-Print Loop)](#4-using-the-nodejs-repl-read-eval-print-loop)
-   - [First Node.js Program](#asd)
+   - [First Node.js Program](#first-nodejs-program)
      - Basic Hello World application
      - Understanding the `process` object
      - Command-line arguments in Node.js
