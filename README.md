@@ -20,7 +20,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
 
 ## 2. [Understanding Node.js Core Concepts](#Understanding-Nodejs-Core-Concepts)
    - [Node.js Architecture](#nodejs-architecture)
-     - Event-driven architecture
+     - [Event-driven architecture](#2-event-driven-architecture)
      - The V8 JavaScript engine
      - Single-threaded and non-blocking I/O
    - Modules and Packages
