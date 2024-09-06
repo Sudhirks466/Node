@@ -859,3 +859,6 @@ Here's a quick version of a **Hello World** application in **Node.js**:
    ```
 
 That's it! You've created a basic **Node.js Hello World** app.
+
+---
+# **Understanding the `process` object**
