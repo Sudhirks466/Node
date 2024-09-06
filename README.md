@@ -14,7 +14,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Installing Node.js and NPM](#3-installing-nodejs-and-npm)
      - [Using the Node REPL (Read-Eval-Print Loop)](#4-using-the-nodejs-repl-read-eval-print-loop)
    - [First Node.js Program](#first-nodejs-program)
-     - [Basic Hello World application](#sdfds)
+     - [Basic Hello World application](#basic-hello-world-application)
      - Understanding the `process` object
      - Command-line arguments in Node.js
 
@@ -815,3 +815,47 @@ This is a quick start to writing basic programs in Node.js. From here, you can e
 ---
 
 # **Basic Hello World application**
+Here's a quick version of a **Hello World** application in **Node.js**:
+
+### Steps:
+
+1. **Create a Project Directory**:
+   ```bash
+   mkdir hello-world
+   cd hello-world
+   ```
+
+2. **Create the `app.js` file**:
+   ```bash
+   touch app.js
+   ```
+
+3. **Write the Code** inside `app.js`:
+   ```javascript
+   const http = require('http');
+
+   // Create an HTTP server
+   const server = http.createServer((req, res) => {
+     res.statusCode = 200;
+     res.setHeader('Content-Type', 'text/plain');
+     res.end('Hello, World!\n');
+   });
+
+   // Start the server on port 3000
+   server.listen(3000, () => {
+     console.log('Server running at http://localhost:3000/');
+   });
+   ```
+
+4. **Run the Application**:
+   ```bash
+   node app.js
+   ```
+
+5. **Access the App**:
+   Open a browser and go to [http://localhost:3000/](http://localhost:3000/) to see the message:  
+   ```
+   Hello, World!
+   ```
+
+That's it! You've created a basic **Node.js Hello World** app.
