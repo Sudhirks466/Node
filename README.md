@@ -323,8 +323,8 @@ Node.js comes with the **Node Package Manager (NPM)**, which is a huge ecosystem
 - **2015**: io.js merged back with Node.js, and Node.js came under the Node.js Foundation.
 - **Present**: Node.js is widely used for real-time applications, APIs, and microservices architecture.
 
----
-
 ### **Conclusion**
 
 Node.js has revolutionized server-side development by bringing JavaScript to the backend. Its event-driven, non-blocking model, combined with the vast ecosystem of modules through NPM, makes it ideal for building scalable and efficient applications. Over the years, Node.js has evolved from an experimental runtime into a key technology for modern web development, with continued growth and support from the global developer community.
+
+---
