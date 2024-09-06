@@ -1078,8 +1078,6 @@ node app.js 42
 # **Understanding Node.js Core Concepts**
 To build a solid foundation in **Node.js**, it's essential to understand its core concepts. These concepts help you grasp how Node.js works under the hood and enable you to develop efficient, scalable applications. Let's break them down:
 
----
-
 ### 1. **Non-blocking I/O and Event-Driven Architecture**
 
 #### Non-blocking I/O:
