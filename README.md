@@ -572,7 +572,7 @@ These commands should output the installed versions of Node.js and npm, confirmi
 
 ---
 
-### 3. **Installing Node.js and NPM** **(Node Package Manager)**
+### 3. **Installing Node.js and NPM**
 
 When you install Node.js, **npm** (Node Package Manager) is automatically installed along with it. Here's a brief overview of **npm** and how to use it:
 
