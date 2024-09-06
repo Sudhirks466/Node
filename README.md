@@ -19,7 +19,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Command-line arguments in Node.js](#Command-line-arguments-in-Nodejs)
 
 ## 2. [Understanding Node.js Core Concepts](#Understanding-Nodejs-Core-Concepts)
-   - [Node.js Architecture](#NodejsArchitecture)
+   - [Node.js Architecture](#nodejs-architecture)
      - Event-driven architecture
      - The V8 JavaScript engine
      - Single-threaded and non-blocking I/O
