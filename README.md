@@ -22,7 +22,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - [Node.js Architecture](#nodejs-architecture)
      - [Event-driven architecture](#2-event-driven-architecture)
      - The V8 JavaScript engine
-     - Single-threaded and non-blocking I/O
+     - [Single-threaded and non-blocking I/O](#)
    - Modules and Packages
      - What are modules?
      - Creating custom modules
@@ -1532,3 +1532,7 @@ worker.on('message', (message) => {
 - **Modular Architecture**: Reusable components using the CommonJS module system.
 
 This architecture enables Node.js to efficiently handle I/O-bound operations and concurrent tasks, making it well-suited for applications such as web servers, real-time applications, and API services.
+
+---
+# **Single-threaded and non-blocking I/O**
+
