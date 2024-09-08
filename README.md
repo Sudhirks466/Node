@@ -2329,3 +2329,148 @@ If you visit `http://localhost:3000/user/123`, the response will display `User I
 - **URL Parameters**: Parse dynamic URL parameters by splitting the URL path.
 
 This foundation prepares you to create a basic web server in Node.js. For more advanced routing and server functionality, frameworks like **Express.js** simplify the process.
+
+---
+## 5. Introduction to Express.js
+
+### What is Express.js?
+
+**Express.js** is a minimal and flexible web application framework for Node.js that provides a robust set of features for building web and mobile applications. It simplifies the process of creating server-side applications by providing a range of built-in functionalities and middleware for handling requests, responses, and routing.
+
+#### a) **Overview of Express.js**
+- **Express.js** is built on top of Node.js's HTTP module, but it abstracts much of the complexity, making it easier to build web servers and handle requests.
+- Express is unopinionated, meaning it doesn't impose a particular way of organizing your application, giving developers flexibility in structuring their code.
+- It supports middleware functions that execute during the lifecycle of a request.
+
+#### b) **Benefits of Using Express.js with Node.js**
+1. **Simplified Routing**: Express makes it easy to define routes and handle HTTP requests like GET, POST, PUT, DELETE, etc.
+2. **Middleware Support**: Middleware functions can handle everything from authentication to logging and error handling.
+3. **Supports Templating Engines**: It supports view engines like Pug, EJS, or Handlebars for rendering dynamic content.
+4. **Extensible**: You can add numerous plugins and libraries, such as `body-parser` for request body parsing or `morgan` for logging HTTP requests.
+5. **Scalable**: Express can be easily integrated with other Node.js libraries, making it scalable and extensible for complex web applications.
+
+### Setting Up Express
+
+#### a) **Installing Express using NPM**
+
+To start using Express, you need to install it via NPM (Node Package Manager). 
+
+Steps:
+1. First, initialize your Node.js project if you haven’t already:
+   ```bash
+   npm init -y
+   ```
+   This will generate a `package.json` file that keeps track of your project’s dependencies.
+
+2. Install **Express.js**:
+   ```bash
+   npm install express --save
+   ```
+
+#### b) **Creating a Basic Express Server**
+
+Once Express is installed, you can create a simple server with minimal code. Here's how:
+
+```js
+const express = require('express');
+const app = express(); // Initialize express
+
+// Define a route for GET requests to '/'
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+// Start the server on port 3000
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+```
+
+- **app.get()** defines a route for GET requests.
+- **app.listen()** starts the server and listens on port `3000`.
+
+#### c) **Understanding the Application Structure**
+
+A basic Express.js application structure might look like this:
+```
+my-express-app/
+│
+├── node_modules/          # Node.js modules
+├── public/                # Static assets like images, CSS, JavaScript files
+├── routes/                # Application routes (can be organized here)
+├── views/                 # Templating files (if using a templating engine)
+├── app.js                 # Main application file
+├── package.json           # Metadata about the app and dependencies
+```
+
+While there is no enforced directory structure in Express, you can organize your code into directories for controllers, routes, and views for better maintainability.
+
+---
+
+### Middleware in Express
+
+#### a) **What is Middleware?**
+
+Middleware functions in Express.js are functions that have access to the request object (`req`), the response object (`res`), and the next middleware function in the application's request-response cycle. They can:
+- Execute any code.
+- Modify the request and response objects.
+- End the request-response cycle.
+- Call the next middleware function.
+
+Express applications use a series of middleware functions to handle requests.
+
+#### b) **Using Built-in Middleware**
+
+Express comes with some built-in middleware functions for common tasks.
+
+1. **Static Middleware**:
+   Serves static files like HTML, CSS, and JavaScript from a directory.
+   ```js
+   app.use(express.static('public'));
+   ```
+   This will serve files from the `public` folder.
+
+2. **Body-Parsing Middleware**:
+   Parses incoming request bodies in JSON or URL-encoded format (e.g., form submissions).
+   ```js
+   app.use(express.json()); // To parse JSON payloads
+   app.use(express.urlencoded({ extended: true })); // To parse URL-encoded data (form data)
+   ```
+
+#### c) **Creating Custom Middleware**
+
+You can define your own middleware functions to handle specific tasks, such as logging or modifying requests.
+
+Example of a custom logging middleware:
+```js
+// Middleware function
+app.use((req, res, next) => {
+  console.log(`Request Method: ${req.method}, URL: ${req.url}`);
+  next(); // Pass control to the next middleware function
+});
+```
+
+- The `next()` function is important in middleware to ensure that the next middleware in the stack gets executed. If `next()` is not called, the request will be left hanging.
+
+#### d) **Error-handling Middleware**
+
+Error-handling middleware is a special type of middleware that handles errors in Express applications. You can define an error-handling middleware by using four arguments: `err`, `req`, `res`, and `next`.
+
+Example:
+```js
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
+```
+
+- This middleware is used when an error occurs in the application. For instance, if a route throws an error, this middleware will catch it and handle the response.
+
+### Summary
+
+- **Express.js** is a fast, minimal web framework for Node.js that simplifies routing, middleware handling, and more.
+- **Setting up Express** is straightforward, and creating a basic server requires minimal code.
+- **Middleware** is one of the key components of Express.js. It allows for modular code, with built-in middleware available for common tasks (like serving static files or parsing request bodies).
+- **Custom Middleware** enables developers to extend Express’s functionality, and error-handling middleware ensures that unexpected issues are handled gracefully.
+
+This knowledge prepares you to work with Express.js to build more advanced web applications.
