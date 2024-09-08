@@ -24,7 +24,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - The V8 JavaScript engine
      - [Single-threaded and non-blocking I/O](#single-threaded-and-non-blocking-io)
    - [Modules and Packages](#Modules-and-Packages)
-     - What are modules?
+     - [What are modules?](#1-nodejs-modules)
      - Creating custom modules
      - Importing and exporting modules
      - Using built-in Node.js modules (e.g., `fs`, `path`, `http`)
