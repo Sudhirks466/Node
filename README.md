@@ -26,7 +26,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
    - [Modules and Packages](#Modules-and-Packages)
      - [What are modules?](#1-nodejs-modules)
      - Creating custom modules
-     - Importing and exporting modules
+     - [Importing and exporting modules](#4-exporting-and-importing-modules)
      - [Using built-in Node.js](#a-built-in-modules) modules (e.g., `fs`, `path`, `http`)
    - NPM (Node Package Manager)
      - Understanding `package.json`
