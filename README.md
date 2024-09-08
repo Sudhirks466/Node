@@ -63,19 +63,19 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Creating routes manually](#a-creating-routes-manually)
      - [Parsing URL parameters](#b-parsing-url-parameters)
 
-## 5. Introduction to Express.js
-   - What is Express.js?
-     - Overview of Express.js
-     - Benefits of using Express.js with Node.js
-   - Setting Up Express
-     - Installing Express using NPM
-     - Creating a basic Express server
-     - Understanding the application structure
-   - Middleware in Express
-     - What is middleware?
-     - Using built-in middleware
-     - Creating custom middleware
-     - Error-handling middleware
+## 5. [Introduction to Express.js](#5-introduction-to-expressjs-1)
+   - [What is Express.js?](#what-is-expressjs)
+     - [Overview of Express.js](#a-overview-of-expressjs)
+     - [Benefits of using Express.js with Node.js](#b-benefits-of-using-expressjs-with-nodejs)
+   - [Setting Up Express](#setting-up-express)
+     - [Installing Express using NPM](#a-installing-express-using-npm)
+     - [Creating a basic Express server](#b-creating-a-basic-express-server)
+     - [Understanding the application structure](#c-understanding-the-application-structure)
+   - [Middleware in Express](#middleware-in-express)
+     - [What is middleware?](#a-what-is-middleware)
+     - [Using built-in middleware](#b-using-built-in-middleware)
+     - [Creating custom middleware](#c-creating-custom-middleware)
+     - [Error-handling middleware](#d-error-handling-middleware)
 
 ## 6. Routing in Express
    - Defining Routes
