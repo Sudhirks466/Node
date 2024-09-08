@@ -2153,3 +2153,179 @@ readFileAsync();
 - **Callbacks**: Key concept for handling asynchronous operations.
 - **Promises**: A cleaner way to handle async operations, replacing callback hell.
 - **Async/Await**: A modern approach to write asynchronous code in a synchronous style.
+
+---
+## 4. HTTP Module and Creating a Server in Node.js
+
+Node.js is ideal for building web servers because it is designed for asynchronous and event-driven operations. The built-in **HTTP module** makes it easy to create basic web servers and handle HTTP requests and responses.
+
+### Introduction to HTTP
+
+**HTTP (Hypertext Transfer Protocol)** is a protocol used for communication between a client (e.g., web browser) and a server. It is the foundation of data exchange on the web.
+
+#### a) **Understanding HTTP Protocols**
+- **HTTP/1.1**: The most widely used version of HTTP, it operates over TCP, where each request is sent individually, often resulting in multiple connections.
+- **HTTP/2**: A more modern version that allows multiplexing (multiple requests and responses over a single TCP connection) for improved performance.
+  
+#### b) **HTTP Request and Response Lifecycle**
+- **Request**: The client sends an HTTP request to the server with the method (GET, POST, etc.), headers (metadata), and optional body (for methods like POST, PUT).
+  
+- **Response**: The server processes the request and sends back a response with a status code (200 OK, 404 Not Found, etc.), headers, and optional body (such as HTML, JSON).
+
+Basic structure of an HTTP request:
+```
+GET /path HTTP/1.1
+Host: example.com
+Content-Type: text/html
+```
+
+Basic structure of an HTTP response:
+```
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 345
+```
+
+### Creating a Basic HTTP Server
+
+The **`http` module** in Node.js allows you to create an HTTP server that listens for and responds to HTTP requests.
+
+#### a) **Using the `http` Module to Create a Server**
+
+You can create an HTTP server with the `http.createServer()` method, which takes a callback function to handle incoming requests and send responses.
+
+Example:
+```js
+const http = require('http');
+
+// Create a server
+const server = http.createServer((req, res) => {
+  // Set the response header and status
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello, World!\n');
+});
+
+// Make the server listen on port 3000
+server.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+```
+
+#### b) **Handling Different Types of HTTP Requests (GET, POST, etc.)**
+
+You can check the request method using `req.method` to handle different types of HTTP requests, such as GET and POST.
+
+Example:
+```js
+const server = http.createServer((req, res) => {
+  if (req.method === 'GET') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('<h1>Hello, this is a GET request</h1>');
+  } else if (req.method === 'POST') {
+    let body = '';
+
+    // Gather the data from the POST request body
+    req.on('data', chunk => {
+      body += chunk.toString();
+    });
+
+    // Respond after receiving the complete body
+    req.on('end', () => {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(`<h1>Received POST data: ${body}</h1>`);
+    });
+  } else {
+    res.writeHead(405, { 'Content-Type': 'text/html' });
+    res.end('<h1>Method Not Allowed</h1>');
+  }
+});
+
+server.listen(3000);
+```
+
+#### c) **Working with Query Strings and Request Parameters**
+
+Query strings are part of the URL that contain data. For example, in the URL `http://example.com/search?query=nodejs`, `query=nodejs` is the query string.
+
+You can use the `url` module to parse query strings.
+
+Example:
+```js
+const url = require('url');
+
+const server = http.createServer((req, res) => {
+  const parsedUrl = url.parse(req.url, true);
+  const queryObject = parsedUrl.query;
+
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end(`<h1>Search Query: ${queryObject.query}</h1>`);
+});
+
+server.listen(3000);
+```
+
+In this case, if you visit `http://localhost:3000/search?query=nodejs`, the response will display `Search Query: nodejs`.
+
+### Routing with HTTP Module
+
+Routing is the process of directing an HTTP request to the right resource based on the URL and HTTP method.
+
+#### a) **Creating Routes Manually**
+
+In a basic Node.js server, you can manually create routes by checking the URL path (`req.url`) and HTTP method (`req.method`).
+
+Example:
+```js
+const server = http.createServer((req, res) => {
+  if (req.url === '/' && req.method === 'GET') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('<h1>Welcome to the Homepage</h1>');
+  } else if (req.url === '/about' && req.method === 'GET') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end('<h1>About Us Page</h1>');
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/html' });
+    res.end('<h1>404 Not Found</h1>');
+  }
+});
+
+server.listen(3000);
+```
+
+Here, `GET /` and `GET /about` have their own routes, and any other request results in a `404 Not Found` response.
+
+#### b) **Parsing URL Parameters**
+
+URL parameters are dynamic segments in the URL that can pass data. For example, `/user/123` contains the parameter `123`.
+
+To manually parse URL parameters, you can split the URL path:
+
+Example:
+```js
+const server = http.createServer((req, res) => {
+  const path = req.url.split('/');
+  
+  if (path[1] === 'user' && req.method === 'GET') {
+    const userId = path[2];
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.end(`<h1>User ID: ${userId}</h1>`);
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/html' });
+    res.end('<h1>404 Not Found</h1>');
+  }
+});
+
+server.listen(3000);
+```
+
+If you visit `http://localhost:3000/user/123`, the response will display `User ID: 123`.
+
+### Summary
+
+- **HTTP Module**: The `http` module in Node.js allows you to create an HTTP server and handle requests and responses.
+- **Handling HTTP Requests**: Use `req.method` to handle different request types (GET, POST).
+- **Query Strings**: Parse query strings using the `url` module (`url.parse(req.url, true)`).
+- **Routing**: Manually create routes by checking `req.url` and `req.method` values.
+- **URL Parameters**: Parse dynamic URL parameters by splitting the URL path.
+
+This foundation prepares you to create a basic web server in Node.js. For more advanced routing and server functionality, frameworks like **Express.js** simplify the process.
