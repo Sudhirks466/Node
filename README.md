@@ -33,23 +33,23 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Installing, updating, and removing packages](#3-installing-updating-and-removing-packages)
      - [Global vs. local packages](#3-installing-updating-and-removing-packages)
      - [Semantic versioning](#3-installing-updating-and-removing-packages)
-## 3. File System and Asynchronous Programming
-   - File System Module (`fs`)
-     - Reading and writing files (synchronous vs. asynchronous)
-     - Working with directories
-     - File streams and buffers
-   - Events and Event Emitters
-     - Understanding the event loop
-     - Creating and handling custom events
-     - Using the `events` module
-   - Callback Functions
-     - Understanding callbacks
-     - Error-first callback convention
-   - Promises and Async/Await
-     - Introduction to Promises
-     - Using `then()` and `catch()`
-     - Async/Await syntax
-     - Error handling with Async/Await
+## 3. [File System and Asynchronous Programming](#3-file-system-and-asynchronous-programming-in-nodejs)
+   - [File System Module (`fs`)](#file-system-module-fs)
+     - [Reading and writing files (synchronous vs. asynchronous)](#file-system-module-fs)
+     - [Working with directories](#b-working-with-directories)
+     - [File streams and buffers](#c-file-streams-and-buffers)
+   - [Events and Event Emitters](#c-file-streams-and-buffers)
+     - [Understanding the event loop](#a-understanding-the-event-loop)
+     - [Creating and handling custom events](#b-creating-and-handling-custom-events)
+     - [Using the `events` module](#c-using-the-events-module)
+   - [Callback Functions](#callback-functions)
+     - [Understanding callbacks](#a-understanding-callbacks)
+     - [Error-first callback convention](#b-error-first-callback-convention)
+   - [Promises and Async/Await](#promises-and-asyncawait)
+     - [Introduction to Promises](#a-introduction-to-promises)
+     - [Using `then()` and `catch()`](#b-using-then-and-catch)
+     - [Async/Await syntax](#c-asyncawait-syntax)
+     - [Error handling with Async/Await](#d-error-handling-with-asyncawait)
 
 ## 4. HTTP Module and Creating a Server
    - Introduction to HTTP
