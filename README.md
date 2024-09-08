@@ -28,11 +28,11 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Creating custom modules](#b-local-modules)
      - [Importing and exporting modules](#4-exporting-and-importing-modules)
      - [Using built-in Node.js](#a-built-in-modules) modules (e.g., `fs`, `path`, `http`)
-   - NPM (Node Package Manager)
-     - Understanding `package.json`
-     - Installing, updating, and removing packages
-     - Global vs. local packages
-     - Semantic versioning
+   - [NPM (Node Package Manager)](#1-npm-node-package-manager)
+     - [Understanding `package.json`](#2-understanding-packagejson)
+     - [Installing, updating, and removing packages](#3-installing-updating-and-removing-packages)
+     - [Global vs. local packages](#3-installing-updating-and-removing-packages)
+     - [Semantic versioning](#3-installing-updating-and-removing-packages)
 ## 3. File System and Asynchronous Programming
    - File System Module (`fs`)
      - Reading and writing files (synchronous vs. asynchronous)
