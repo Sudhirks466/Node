@@ -25,7 +25,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Single-threaded and non-blocking I/O](#single-threaded-and-non-blocking-io)
    - [Modules and Packages](#Modules-and-Packages)
      - [What are modules?](#1-nodejs-modules)
-     - Creating custom modules
+     - [Creating custom modules](#b-local-modules)
      - [Importing and exporting modules](#4-exporting-and-importing-modules)
      - [Using built-in Node.js](#a-built-in-modules) modules (e.g., `fs`, `path`, `http`)
    - NPM (Node Package Manager)
