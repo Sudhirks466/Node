@@ -51,17 +51,17 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Async/Await syntax](#c-asyncawait-syntax)
      - [Error handling with Async/Await](#d-error-handling-with-asyncawait)
 
-## 4. HTTP Module and Creating a Server
-   - Introduction to HTTP
-     - Understanding HTTP protocols
-     - HTTP request and response lifecycle
-   - Creating a Basic HTTP Server
-     - Using the `http` module to create a server
-     - Handling different types of HTTP requests (GET, POST, etc.)
-     - Working with query strings and request parameters
-   - Routing with HTTP Module
-     - Creating routes manually
-     - Parsing URL parameters
+## 4. [HTTP Module and Creating a Server](#4-http-module-and-creating-a-server-in-nodejs)
+   - [Introduction to HTTP](#introduction-to-http)
+     - [Understanding HTTP protocols](#a-understanding-http-protocols)
+     - [HTTP request and response lifecycle](#b-http-request-and-response-lifecycle)
+   - [Creating a Basic HTTP Server](#creating-a-basic-http-server)
+     - [Using the `http` module to create a server](#a-using-the-http-module-to-create-a-server)
+     - [Handling different types of HTTP requests (GET, POST, etc.)](#b-handling-different-types-of-http-requests-get-post-etc)
+     - [Working with query strings and request parameters](#c-working-with-query-strings-and-request-parameters)
+   - [Routing with HTTP Module](#routing-with-http-module)
+     - [Creating routes manually](#a-creating-routes-manually)
+     - [Parsing URL parameters](#b-parsing-url-parameters)
 
 ## 5. Introduction to Express.js
    - What is Express.js?
