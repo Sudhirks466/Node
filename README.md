@@ -177,19 +177,19 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Implementing logging with `winston` or similar libraries](#a-implementing-logging-with-winston-or-similar-libraries)
      - [Monitoring applications with tools like PM2, New Relic](#b-monitoring-applications-with-pm2-new-relic)
 
-## 14. Project: Building a Full-Stack Application
-   - Project Planning and Design
-     - Planning the architecture of a full-stack application
-     - Defining the features and requirements
-   - Building the Backend
-     - Setting up the Express server
-     - Implementing API endpoints and database interactions
-   - Integrating the Frontend
-     - Connecting the frontend (using frameworks like React or Angular) with the backend API
-     - Handling CORS issues
-   - Deployment and Final Presentation
-     - Deploying the full-stack application to a cloud platform
-     - Final project presentation and code review
+## 14. [Project: Building a Full-Stack Application](#14-project-building-a-full-stack-application-in-nodejs)
+   - [Project Planning and Design](#project-planning-and-design)
+     - [Planning the architecture of a full-stack application](#a-planning-the-architecture-of-a-full-stack-application)
+     - [Defining the features and requirements](#b-defining-the-features-and-requirements)
+   - [Building the Backend](#building-the-backend)
+     - [Setting up the Express server](#a-setting-up-the-express-server)
+     - [Implementing API endpoints and database interactions](#b-implementing-api-endpoints-and-database-interactions)
+   - [Integrating the Frontend](#integrating-the-frontend)
+     - [Connecting the frontend (using frameworks like React or Angular) with the backend API](#a-connecting-the-frontend-with-the-backend-api)
+     - [Handling CORS issues](#b-handling-cors-issues)
+   - [Deployment and Final Presentation](#deployment-and-final-presentation)
+     - [Deploying the full-stack application to a cloud platform](#a-deploying-the-full-stack-application-to-a-cloud-platform)
+     - [Final project presentation and code review](#b-final-project-presentation-and-code-review)
 
 ## 15. Conclusion and Next Steps
    - Review of Key Concepts
