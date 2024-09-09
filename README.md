@@ -171,8 +171,6 @@ Here's a comprehensive syllabus for learning GraphQL with Node.js, starting from
 - **Exploring Advanced GraphQL Frameworks**
 - **Contributing to Open Source GraphQL Projects**
 
----
-
 By the end of this syllabus, you will have a solid foundation in building full-fledged GraphQL APIs using Node.js, integrating with databases, and deploying them in production environments.
 
 Here's a comprehensive syllabus for learning GraphQL with Node.js, starting from the basics to advanced concepts. The structure includes theoretical knowledge as well as hands-on projects:
