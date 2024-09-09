@@ -107,7 +107,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Handling file uploads with `multer` middleware](#a-handling-file-uploads-with-multer-middleware)
      - [Validating and processing uploaded files](#b-validating-and-processing-uploaded-files)
 
-## 9. 9. [Databases and CRUD Operations](#9-databases-and-crud-operations-in-nodejs)
+## 9. [Databases and CRUD Operations](#9-databases-and-crud-operations-in-nodejs)
    - [Introduction to Databases](#introduction-to-databases)
      - Overview of relational (SQL) vs. NoSQL databases
    - [Working with MongoDB](#working-with-mongodb)
