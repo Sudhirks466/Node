@@ -88,16 +88,16 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Using Express Router for modular routes](#a-using-express-router-for-modular-routes)
      - [Organizing routes in separate files](#b-organizing-routes-in-separate-files)
 
-## 7. [Templating and Rendering Views]
-   - Understanding Templating Engines
-     - Overview of templating engines (e.g., EJS, Pug, Handlebars)
-   - Using EJS with Express
-     - Setting up EJS in an Express application
-     - Creating and rendering EJS templates
-     - Passing data to views
-   - Static Files
-     - Serving static files (CSS, JavaScript, images)
-     - Using the `express.static` middleware
+## 7. [Templating and Rendering Views](#7-templating-and-rendering-views-in-express)
+   - [Understanding Templating Engines](#understanding-templating-engines)
+     - [Overview of templating engines](#understanding-templating-engines) (e.g., EJS, Pug, Handlebars)
+   - [Using EJS with Express](#using-ejs-with-express)
+     - [Setting up EJS in an Express application](#a-setting-up-ejs-in-an-express-application)
+     - [Creating and rendering EJS templates](#b-creating-and-rendering-ejs-templates)
+     - [Passing data to views](#c-passing-data-to-views)
+   - [Static Files](#static-files)
+     - [Serving static files (CSS, JavaScript, images)](#a-serving-static-files)
+     - [Using the `express.static` middleware](#b-using-the-expressstatic-middleware)
 
 ## 8. Working with Forms and Data Handling
    - Handling Form Data
