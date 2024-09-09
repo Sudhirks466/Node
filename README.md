@@ -2659,3 +2659,171 @@ This structure keeps your code modular and maintainable, making it easier to man
 - **Modular Routes**: Organizing routes into separate files helps maintain clean and scalable code, especially as your application grows.
 
 Routing is one of the most fundamental parts of building web applications, and Express provides a simple yet powerful way to define and manage routes effectively.
+
+---
+## 7. Templating and Rendering Views in Express
+
+Express makes it easy to integrate **templating engines** to dynamically generate HTML pages. Templating engines allow you to combine static HTML with dynamic data. This approach is useful when you want to create dynamic web pages where the content changes based on the data passed to the view.
+
+### Understanding Templating Engines
+
+A **templating engine** is a tool that enables you to inject dynamic content into HTML. These engines allow developers to embed server-side variables, loops, and conditionals into static HTML to generate pages dynamically. Popular templating engines include:
+
+- **EJS (Embedded JavaScript)**: A simple templating language that lets you embed JavaScript into HTML. It's known for its straightforward syntax and ease of use.
+- **Pug** (formerly Jade): A templating language with a minimalist, indentation-based syntax. It compiles to HTML and allows for clean, concise templates.
+- **Handlebars**: A powerful templating engine that allows you to create reusable templates with logic embedded in them.
+
+Each engine has its own syntax and features, but they all serve the same purpose: dynamically generating HTML on the server.
+
+### Using EJS with Express
+
+#### a) **Setting Up EJS in an Express Application**
+
+To use **EJS** in Express, you first need to install it via npm and configure it in your application.
+
+1. Install EJS:
+   ```bash
+   npm install ejs --save
+   ```
+
+2. Configure Express to use EJS as the templating engine:
+   ```js
+   const express = require('express');
+   const app = express();
+
+   // Set EJS as the templating engine
+   app.set('view engine', 'ejs');
+
+   app.listen(3000, () => {
+     console.log('Server running on http://localhost:3000');
+   });
+   ```
+
+By setting the `'view engine'` to `'ejs'`, Express will automatically look for `.ejs` files in the **views** folder when rendering templates.
+
+#### b) **Creating and Rendering EJS Templates**
+
+Create an `index.ejs` file in the **views** directory:
+```
+views/
+│
+└── index.ejs
+```
+
+**index.ejs**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+</head>
+<body>
+  <h1>Welcome to <%= siteName %>!</h1>
+  <p>Hello, <%= userName %></p>
+</body>
+</html>
+```
+
+In this template, the `<%= %>` syntax is used to output dynamic data from the server.
+
+To render this template from a route in Express:
+```js
+app.get('/', (req, res) => {
+  const data = {
+    siteName: 'My Awesome Site',
+    userName: 'John Doe'
+  };
+  res.render('index', data); // Render the index.ejs template
+});
+```
+
+The `res.render()` method renders the `index.ejs` template and injects the `data` object into the view. The `siteName` and `userName` values are dynamically rendered in the HTML.
+
+#### c) **Passing Data to Views**
+
+You can pass any type of data (strings, arrays, objects) to the EJS templates by including it in the object passed to `res.render()`.
+
+Example:
+```js
+app.get('/dashboard', (req, res) => {
+  const user = {
+    name: 'Alice',
+    age: 30,
+    hobbies: ['reading', 'cycling', 'hiking']
+  };
+  res.render('dashboard', { user });
+});
+```
+
+**dashboard.ejs**:
+```html
+<h1>Welcome, <%= user.name %>!</h1>
+<p>Age: <%= user.age %></p>
+
+<h2>Hobbies</h2>
+<ul>
+  <% user.hobbies.forEach(hobby => { %>
+    <li><%= hobby %></li>
+  <% }); %>
+</ul>
+```
+
+This code will dynamically render the user's name, age, and hobbies as a list in the HTML.
+
+### Static Files
+
+In addition to dynamic templates, Express allows you to serve static files like **CSS**, **JavaScript**, and **images** that don't need to be dynamically generated.
+
+#### a) **Serving Static Files**
+
+To serve static assets, such as CSS files, client-side JavaScript, or images, you can use the `express.static` middleware. It serves the files directly from a specified directory.
+
+1. First, create a **public** directory for static files:
+   ```
+   public/
+   ├── css/
+   │   └── style.css
+   └── js/
+       └── app.js
+   ```
+
+2. Use the `express.static` middleware to serve the **public** directory:
+   ```js
+   app.use(express.static('public'));
+   ```
+
+Now, all files within the `public` directory can be accessed via URLs. For example:
+- `http://localhost:3000/css/style.css`
+- `http://localhost:3000/js/app.js`
+
+#### b) **Using the `express.static` Middleware**
+
+You can use the static files (e.g., styles and scripts) in your EJS templates as follows:
+
+**index.ejs**:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <h1>Welcome to <%= siteName %>!</h1>
+  <p>Hello, <%= userName %></p>
+  <script src="/js/app.js"></script>
+</body>
+</html>
+```
+
+In this example, the `style.css` file from the **public/css** folder is linked to the EJS template, and the `app.js` file from **public/js** is included as a script.
+
+### Summary
+
+- **Templating Engines**: Templating engines like EJS, Pug, and Handlebars allow you to dynamically generate HTML in Express. Each engine has a different syntax, but they all support rendering dynamic content on the server.
+- **EJS**: A popular templating engine that allows you to embed JavaScript in HTML templates. Express can be configured to use EJS easily, and it provides a simple syntax to pass dynamic data to views.
+- **Static Files**: You can serve static assets like CSS, JavaScript, and images using the `express.static` middleware. These files are typically served from a designated **public** directory.
+
+This gives you a foundation for dynamically rendering content with EJS and serving static files in your Express applications.
+
+---
