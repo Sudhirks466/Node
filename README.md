@@ -1,17 +1,17 @@
 Here's a comprehensive syllabus for learning GraphQL with Node.js, starting from the basics to advanced concepts. The structure includes theoretical knowledge as well as hands-on projects:
 
-### **1. Introduction to GraphQL**
-- **What is GraphQL?**
-  - Difference between REST and GraphQL
+### **1. [Introduction to GraphQL](#1-introduction-to-graphql-1)**
+- **[What is GraphQL?](#1-introduction-to-graphql-1)**
+  - [Difference between REST and GraphQL](#1-introduction-to-graphql-1)
   - Key features of GraphQL
   - Advantages of using GraphQL
-- **GraphQL Architecture**
+- **[GraphQL Architecture](#graphql-architect)**
   - Query Language for API
   - GraphQL Server and Client
-- **Basic Syntax of GraphQL**
-  - Queries
-  - Mutations
-  - Subscriptions
+- **[Basic Syntax of GraphQL](#2-basic-syntax-of-graphql)**
+  - [Queries](#queries)
+  - [Mutations](#mutations)
+  - [Subscriptions](#subscriptions)
 
 ### **2. Setting Up the Environment**
 - **Introduction to Node.js and npm**
