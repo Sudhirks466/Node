@@ -121,22 +121,22 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Introduction to SQL databases (e.g., MySQL, PostgreSQL)](#a-introduction-to-sql-databases)
      - [Connecting Node.js with SQL databases using `sequelize` or other ORMs](#b-connecting-nodejs-with-sql-databases-using-sequelize)
 
-## 10. Authentication and Security
-   - User Authentication
-     - Introduction to authentication strategies
-     - Using Passport.js for authentication
-     - Implementing local authentication (username/password)
-     - Securing routes with authentication middleware
-   - Session Management
-     - Understanding sessions and cookies
-     - Using `express-session` for session management
-   - JWT (JSON Web Tokens)
-     - Understanding JWT for token-based authentication
-     - Implementing JWT authentication in Express
-   - Security Best Practices
-     - Protecting against common vulnerabilities (e.g., SQL Injection, XSS)
-     - Using environment variables for configuration
-     - Rate limiting and IP blocking
+## 10. [Authentication and Security](#10-authentication-and-security-in-nodejs)
+   - [User Authentication](#user-authentication)
+     - [Introduction to authentication strategies](#a-introduction-to-authentication-strategies)
+     - [Using Passport.js for authentication](#b-using-passportjs-for-authentication)
+     - [Implementing local authentication (username/password)](#c-implementing-local-authentication-usernamepassword)
+     - [Securing routes with authentication middleware](#d-securing-routes-with-authentication-middleware)
+   - [Session Management](#session-management)
+     - [Understanding sessions and cookies](#a-understanding-sessions-and-cookies)
+     - [Using `express-session` for session management](#b-using-express-session-for-session-management)
+   - [JWT (JSON Web Tokens)](#jwt-json-web-tokens)
+     - [Understanding JWT for token-based authentication](#a-understanding-jwt-for-token-based-authentication)
+     - [Implementing JWT authentication in Express](#b-implementing-jwt-authentication-in-express)
+   - [Security Best Practices](#security-best-practices)
+     - [Protecting against common vulnerabilities (e.g., SQL Injection, XSS)](#a-protecting-against-common-vulnerabilities)
+     - [Using environment variables for configuration](#b-using-environment-variables-for-configuration)
+     - [Rate limiting and IP blocking](#c-rate-limiting-and-ip-blocking)
 
 ## 11. API Development
    - Introduction to RESTful APIs
