@@ -150,18 +150,18 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Setting up Postman](#a-setting-up-postman)
      - [Creating and testing API requests](#b-creating-and-testing-api-requests)
 
-## 12. Advanced Topics
-   - WebSockets and Real-Time Communication
-     - Introduction to WebSockets
-     - Implementing WebSockets with `socket.io`
-     - Real-time updates in web applications
-   - Testing in Node.js and Express
-     - Introduction to testing frameworks (e.g., Mocha, Chai)
-     - Writing unit tests for Node.js applications
-     - Testing Express routes and middleware
-   - Error Handling and Debugging
-     - Error handling in Express
-     - Using debugging tools and techniques
+## 12. [Advanced Topics](#12-advanced-topics-in-nodejs)
+   - [WebSockets and Real-Time Communication](#websockets-and-real-time-communication)
+     - [Introduction to WebSockets](#a-introduction-to-websockets)
+     - [Implementing WebSockets with `socket.io`](#b-implementing-websockets-with-socketio)
+     - [Real-time updates in web applications](#c-real-time-updates-in-web-applications)
+   - [Testing in Node.js and Express](#testing-in-nodejs-and-express)
+     - [Introduction to testing frameworks (e.g., Mocha, Chai)](#a-introduction-to-testing-frameworks)
+     - [Writing unit tests for Node.js applications](#b-writing-unit-tests-for-nodejs-applications)
+     - [Testing Express routes and middleware](#c-testing-express-routes-and-middleware)
+   - [Error Handling and Debugging](#error-handling-and-debugging)
+     - [Error handling in Express](#a-error-handling-in-express)
+     - [Using debugging tools and techniques](#b-using-debugging-tools-and-techniques)
 
 ## 13. Deployment and Production
    - Preparing for Production
