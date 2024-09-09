@@ -77,16 +77,16 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Creating custom middleware](#c-creating-custom-middleware)
      - [Error-handling middleware](#d-error-handling-middleware)
 
-## 6. Routing in Express
-   - Defining    
-     - Basic route definition
-     - Handling different HTTP methods
-   - Route Parameters and Query Strings
-     - Capturing and using route parameters
-     - Handling query strings
-   - Route Grouping and Modular Routes
-     - Using Express Router for modular routes
-     - Organizing routes in separate files
+## 6. [Routing in Express](#6-routing-in-express-1)
+   - [Defining](#defining-routes)   
+     - [Basic route definition](#a-basic-route-definition)
+     - [Handling different HTTP methods](#b-handling-different-http-methods)
+   - [Route Parameters and Query Strings](#route-parameters-and-query-strings)
+     - [Capturing and using route parameters](#a-capturing-and-using-route-parameters)
+     - [Handling query strings](#b-handling-query-strings)
+   - [Route Grouping and Modular Routes](#route-grouping-and-modular-routes)
+     - [Using Express Router for modular routes](#a-using-express-router-for-modular-routes)
+     - [Organizing routes in separate files](#b-organizing-routes-in-separate-files)
 
 ## 7. Templating and Rendering Views
    - Understanding Templating Engines
@@ -2538,8 +2538,6 @@ app.delete('/user/:id', (req, res) => {
 ```
 
 Each route is associated with a specific HTTP method and endpoint, enabling you to handle a wide range of client requests.
-
----
 
 ### Route Parameters and Query Strings
 
