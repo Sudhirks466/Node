@@ -88,7 +88,7 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Using Express Router for modular routes](#a-using-express-router-for-modular-routes)
      - [Organizing routes in separate files](#b-organizing-routes-in-separate-files)
 
-## 7. Templating and Rendering Views
+## 7. [Templating and Rendering Views]
    - Understanding Templating Engines
      - Overview of templating engines (e.g., EJS, Pug, Handlebars)
    - Using EJS with Express
