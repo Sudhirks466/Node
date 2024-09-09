@@ -191,10 +191,10 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Deploying the full-stack application to a cloud platform](#a-deploying-the-full-stack-application-to-a-cloud-platform)
      - [Final project presentation and code review](#b-final-project-presentation-and-code-review)
 
-## 15. Conclusion and Next Steps
-   - Review of Key Concepts
+## 15. [Conclusion and Next Steps](#15-conclusion-and-next-steps-1)
+   - [Review of Key Concepts](#a-review-of-key-concepts)
      - Recap of what has been learned
-   - Exploring Further Topics
+   - [Exploring Further Topics](#b-exploring-further-topics)
      - Microservices architecture
      - GraphQL with Node.js
      - Advanced security techniques
