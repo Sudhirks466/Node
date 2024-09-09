@@ -163,19 +163,19 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Error handling in Express](#a-error-handling-in-express)
      - [Using debugging tools and techniques](#b-using-debugging-tools-and-techniques)
 
-## 13. Deployment and Production
-   - Preparing for Production
-     - Environment configuration
-     - Using environment variables with `dotenv`
-   - Deploying Node.js Applications
-     - Deployment to cloud platforms (e.g., Heroku, AWS, Google Cloud)
-     - Using Docker for containerization
-   - Performance Optimization
-     - Caching strategies (e.g., Redis)
-     - Load balancing and scaling
-   - Logging and Monitoring
-     - Implementing logging with `winston` or similar libraries
-     - Monitoring applications with tools like PM2, New Relic
+## 13. [Deployment and Production](#13-deployment-and-production-in-nodejs)
+   - [Preparing for Production](#preparing-for-production)
+     - [Environment configuration](#a-environment-configuration)
+     - [Using environment variables with `dotenv`](#b-using-environment-variables-with-dotenv)
+   - [Deploying Node.js Applications](#deploying-nodejs-applications)
+     - [Deployment to cloud platforms (e.g., Heroku, AWS, Google Cloud)](#a-deployment-to-cloud-platforms)
+     - [Using Docker for containerization](#b-using-docker-for-containerization)
+   - [Performance Optimization](#performance-optimization)
+     - [Caching strategies (e.g., Redis)](#a-caching-strategies-eg-redis)
+     - [Load balancing and scaling](#b-load-balancing-and-scaling)
+   - [Logging and Monitoring](#logging-and-monitoring)
+     - [Implementing logging with `winston` or similar libraries](#a-implementing-logging-with-winston-or-similar-libraries)
+     - [Monitoring applications with tools like PM2, New Relic](#b-monitoring-applications-with-pm2-new-relic)
 
 ## 14. Project: Building a Full-Stack Application
    - Project Planning and Design
