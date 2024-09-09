@@ -107,19 +107,19 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Handling file uploads with `multer` middleware](#a-handling-file-uploads-with-multer-middleware)
      - [Validating and processing uploaded files](#b-validating-and-processing-uploaded-files)
 
-## 9. Databases and CRUD Operations
-   - Introduction to Databases
+## 9. 9. [Databases and CRUD Operations](#9-databases-and-crud-operations-in-nodejs)
+   - [Introduction to Databases](#introduction-to-databases)
      - Overview of relational (SQL) vs. NoSQL databases
-   - Working with MongoDB
-     - Introduction to MongoDB
-     - Setting up MongoDB and Mongoose
-     - Connecting to MongoDB from Node.js
-   - CRUD Operations with Mongoose
-     - Creating Mongoose models and schemas
-     - Implementing Create, Read, Update, Delete (CRUD) operations
-   - Using SQL Databases
-     - Introduction to SQL databases (e.g., MySQL, PostgreSQL)
-     - Connecting Node.js with SQL databases using `sequelize` or other ORMs
+   - [Working with MongoDB](#working-with-mongodb)
+     - [Introduction to MongoDB](#a-introduction-to-mongodb)
+     - [Setting up MongoDB and Mongoose](#b-setting-up-mongodb-and-mongoose)
+     - [Connecting to MongoDB from Node.js](#c-connecting-to-mongodb-from-nodejs)
+   - [CRUD Operations with Mongoose](#crud-operations-with-mongoose)
+     - [Creating Mongoose models and schemas](#a-creating-mongoose-models-and-schemas)
+     - [Implementing Create, Read, Update, Delete (CRUD) operations](#b-implementing-crud-operations)
+   - [Using SQL Databases](#using-sql-databases)
+     - [Introduction to SQL databases (e.g., MySQL, PostgreSQL)](#a-introduction-to-sql-databases)
+     - [Connecting Node.js with SQL databases using `sequelize` or other ORMs](#b-connecting-nodejs-with-sql-databases-using-sequelize)
 
 ## 10. Authentication and Security
    - User Authentication
