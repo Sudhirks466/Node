@@ -99,13 +99,13 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Serving static files (CSS, JavaScript, images)](#a-serving-static-files)
      - [Using the `express.static` middleware](#b-using-the-expressstatic-middleware)
 
-## 8. Working with Forms and Data Handling
-   - Handling Form Data
-     - Parsing form data using `body-parser` middleware
-     - Understanding URL-encoded and JSON form data
-   - File Uploads
-     - Handling file uploads with `multer` middleware
-     - Validating and processing uploaded files
+## 8. [Working with Forms and Data Handling](#8-working-with-forms-and-data-handling-in-express)
+   - [Handling Form Data](#handling-form-data)
+     - [Parsing form data using `body-parser` middleware](#a-parsing-form-data-using-body-parser-middleware)
+     - [Understanding URL-encoded and JSON form data](#b-understanding-url-encoded-and-json-form-data)
+   - [File Uploads](#file-uploads)
+     - [Handling file uploads with `multer` middleware](#a-handling-file-uploads-with-multer-middleware)
+     - [Validating and processing uploaded files](#b-validating-and-processing-uploaded-files)
 
 ## 9. Databases and CRUD Operations
    - Introduction to Databases
