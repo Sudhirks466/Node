@@ -138,17 +138,17 @@ Creating a comprehensive course syllabus for Node.js and Express.js involves cov
      - [Using environment variables for configuration](#b-using-environment-variables-for-configuration)
      - [Rate limiting and IP blocking](#c-rate-limiting-and-ip-blocking)
 
-## 11. API Development
-   - Introduction to RESTful APIs
-     - Understanding REST principles
-     - Designing RESTful endpoints
-   - Building a REST API with Express
-     - Creating routes for API endpoints
-     - Using middleware for JSON responses
-     - Error handling in APIs
-   - Using Postman for Testing APIs
-     - Setting up Postman
-     - Creating and testing API requests
+## 11. [API Development](#11-api-development-in-nodejs)
+   - [Introduction to RESTful APIs](#introduction-to-restful-apis)
+     - [Understanding REST principles](#a-understanding-rest-principles)
+     - [Designing RESTful endpoints](#b-designing-restful-endpoints)
+   - [Building a REST API with Express](#building-a-rest-api-with-express)
+     - [Creating routes for API endpoints](#a-creating-routes-for-api-endpoints)
+     - [Using middleware for JSON responses](#b-using-middleware-for-json-responses)
+     - [Error handling in APIs](#c-error-handling-in-apis)
+   - [Using Postman for Testing APIs](#using-postman-for-testing-apis)
+     - [Setting up Postman](#a-setting-up-postman)
+     - [Creating and testing API requests](#b-creating-and-testing-api-requests)
 
 ## 12. Advanced Topics
    - WebSockets and Real-Time Communication
