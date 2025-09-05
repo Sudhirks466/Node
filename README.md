@@ -1,3 +1,57 @@
+sure—yahan ek **short, point-wise reply** draft hai jo aap Sandeep (manager) ko Rajat aur Chehak ke mails ke response me bhej sakte ho. Tone professional & concise hai.
+
+---
+
+**Subject:** Axiom KT – Acknowledgement & Readiness (Frontend)
+
+Hi Sandeep,
+
+Thanks for the detailed KT updates from **Rajat** and **Chehak**. Please find my quick acknowledgment and action plan below:
+
+* **KT Coverage Received:**
+
+  * Multi-company (Axiom & Synergy) architecture, company\_id–based access & Super Admin overview.
+  * Service Call module flows (create/edit), related DB tables (for context), notes handling.
+  * E-Parts flow & Admin Tool (Users, Customers, Locations, Equipment, SKU Browser, Parts, Techlinks).
+  * Customer-specific portal behavior (Marco Data/ITT, Myriad 360, Sayers, In-N-Out, Milestones, ReBusiness, etc.).
+  * Notifications/Monitors overview (for user impact on UI).
+  * FieldNation flow & recent API structure notes.
+
+* **Environment & Access:**
+
+  * Local setup verified; repos and environment URLs noted.
+  * Credentials for sandbox/test accounts (as shared) are recorded.
+
+* **Recordings/References:**
+
+  * All KT recordings received (Rajat) + the additional sessions (Chehak). I’ve bookmarked key clips for quick lookup.
+
+* **Frontend Readiness (Angular):**
+
+  * I’m aligned with current coding patterns & component structure.
+  * Comfortable implementing UI changes that depend on: service call flows, customer-specific rules, and E-Parts UX.
+
+* **Coordination:**
+
+  * Will collaborate closely with **Rajat** & **Anmol** for API sync and with **Chehak** for UI consistency.
+  * Hitesh will be kept in loop on design/architecture decisions.
+
+* **Next Steps (Proposed):**
+
+  1. Pick up the next UI tickets on Service Call & Customer Portal tweaks.
+  2. Validate FieldNation-related UI paths using the shared sandbox.
+  3. Prepare a brief checklist for UAT handoffs (per customer context).
+
+Please let me know if you’d like me to prioritize any specific module or customer first.
+Happy to jump on a quick call for alignment.
+
+Kind regards,
+**Sudhir Sahani**
+Frontend Engineer (Angular) – Axiom Project
+
+
+
+
 # Node
 
 Node.js
